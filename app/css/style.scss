@@ -1,4 +1,5 @@
-@use 'reset';
-@use 'typography';
-@use 'variables';
-@use 'mixins';
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+@import 'typography';
