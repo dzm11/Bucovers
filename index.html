@@ -150,24 +150,29 @@
       </div>
 
       <div class="about container flex flex-ai-c">
-        <div class="about__content">
-          <h1>O nas</h1>
-          <h3>Przedsiębiorstwo Wielobranżowe Bukowscy jest firmą rodzinną,
-            działającą na rynku od 1992 roku. Dzięki kilkunastoletniemu
-            doświadczeniu zapewniamy naszym klientom profesjonalną obsługę w
-            zakresie oferowanych przez nas usług. Przez lata pracy zdobyliśmy
-            wiedzę i doświadczenie, które pozwoliły nam zbudować profesjonalną
-            firmę produkującą zadaszenia basenowe.</h3>
-          <button>Dowiedz się więcej</button>
+        <div class="about__content flex flex-ai-c">
+          <div class="about__content--text">
+            <h1>O nas</h1>
+            <h3>Przedsiębiorstwo Wielobranżowe Bukowscy jest firmą rodzinną,
+              działającą na rynku od 1992 roku. Dzięki kilkunastoletniemu
+              doświadczeniu zapewniamy naszym klientom profesjonalną obsługę w
+              zakresie oferowanych przez nas usług. Przez lata pracy zdobyliśmy
+              wiedzę i doświadczenie, które pozwoliły nam zbudować profesjonalną
+              firmę produkującą zadaszenia basenowe.</h3>
+            <button>Dowiedz się więcej</button>
+          </div>
         </div>
-        <div class="about__image"><img src="app/img/o-nas.jpg" alt=""></div>
+        <div class="about__image">
+          <img src="app/img/o-nas.jpg" alt="">
+        </div>
       </div>
 
-      <div class="production">
+      <div class="production container flex flex-ai-c">
         <div class="production__image">
-          <img src="" alt="" />
+          <img src="app/img/o-nas.jpg" alt="" />
         </div>
         <div class="production__content">
+          <div class="production__content--text">
           <h1>Produkcja</h1>
           <h3>Bezkonkurencyjna organizacja oraz wyspecjalizowany sprzęt pozwala
             nam wysyłać rocznie ok. 800 sztuk zadaszeń do wielu państw takich
@@ -181,12 +186,13 @@
           <button>Dowiedz się więcej</button>
         </div>
       </div>
-
-      <div class="departments">
+      </div>
+      <div class="departments flex flex-ai-c">
         <h1>Skontakuj sie z nami</h1>
         <div class="departments__content">
           <div class="departments__content--item">
             <div class="item__title">DZIAŁ SPRZEDAŻY</div>
+            <span></span>
             <div class="item__person">
               <p>Krzysztof Ziółkowski</p>
               <p>krzysztof.ziolkowski@bucovers.pl</p>
@@ -205,6 +211,7 @@
           </div>
           <div class="departments__content--item">
             <div class="item__title">DZIAŁ TECHNICZNY</div>
+            <span></span>
             <div class="item__person">
               <p>Piotr Graczyk</p>
               <p>piotr.graczyk@bucovers.pl</p>
@@ -218,11 +225,13 @@
           </div>
           <div class="departments__content--item">
             <div class="item__title">SERWIS</div>
-            <div class="item__person">
+            <span></span>
+            <div class="item__person serwis">
               <p>bucovers@bucovers.pl</p>
               <p>+48 605 212 213</p>
             </div>
             <div class="item__title">DZIAŁ LOGISTYKI</div>
+            <span></span>
             <div class="item__person">
               <p>Sławomir Czubachowski</p>
               <p>bucovers@bucovers.pl</p>
@@ -232,32 +241,28 @@
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact flex flex-ai-c">
         <div class="contact__header">
           <h1>Napisz do nas!</h1>
         </div>
 
         <form id="enquiry" class="form">
-          <div class="content">
-            <h4>Masz jakieś pytanie?</h4>
-            <h1>Wyślij wiadomość!</h1>
+          <div class="content flex">
             <div class="row flex">
               <div class="row__full">
-                <label for="fname">Imię i nazwisko*</label>
-                <input type="text" name="Imie" id="" placeholder="Imię i
-                  nazwisko*" required />
+                <!-- <label for="fname">Imię i nazwisko*</label> -->
+                <input type="text" name="Imie" id="" placeholder="Imię i nazwisko*" required />
               </div>
             </div>
 
             <div class="row flex">
               <div class="row__half">
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="" placeholder="Podaj adres
-                  email" required />
+                <!-- <label for="email">Email*</label> -->
+                <input type="email" name="email" id="" placeholder="Podaj adres email" required />
               </div>
 
               <div class="row__half">
-                <label for="number">Numer telefonu</label>
+                <!-- <label for="number">Numer telefonu</label> -->
                 <input type="text" name="Numer_Telefonu" id=""
                   placeholder="Podaj swój numer telefonu" />
               </div>
@@ -265,20 +270,21 @@
 
             <div class="row flex">
               <div class="row__full">
-                <label for="textarea">Twoja wiadomość ...</label>
-                <textarea name="Wiadomość" id="" cols="30" rows="10"
+                <!-- <label for="textarea">Twoja wiadomość ...</label> -->
+                <textarea name="Wiadomość" id="" cols="100" rows="10"
                   placeholder="Wpisz treść wiadomości" required></textarea>
               </div>
             </div>
-            <button type="submit">Wyślij wiadomość</button>
+            <div class="button flex flex-jc-c">
+              <button type="submit">Wyślij wiadomość</button>
+            </div>
           </div>
         </form>
       </div>
 
-      <div class="footer">
-        <div class="footer__content">
-          <div class="footer__content--logo"><img src="app/img/logo-black.svg"
-              alt="" /></div>
+      <div class="footer container">
+        <div class="footer__content flex">
+          <div class="footer__content--logo"><img src="app/img/logo-black.svg" alt="" /></div>
           <div class="footer__content--columns">
             <div class="column">
               <a href="">O nas</a>
@@ -306,7 +312,7 @@
         </div>
       </div>
 
-      <div class="author">
+      <div class="author flex flex-jc-c">
         <p>website made by melon.studio</p>
       </div>
     </div>

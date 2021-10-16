@@ -57,6 +57,7 @@ button,
 textarea,
 select {
   font: inherit;
+  border: none;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -345,26 +346,324 @@ body.open {
   font-weight: 400;
 }
 
+.about {
+  margin-bottom: 130px;
+}
+
 .about__content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.about__content h1 {
+.about__content--text {
+  padding-left: 70px;
+}
+
+.about__content--text h1 {
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-.about__content h3 {
+.about__content--text h3 {
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 38px;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.about__content--text button {
+  background-color: #202020;
+  color: #ffffff;
+  padding: 18px 46px;
+  font-size: 1.375rem;
+  font-weight: 600;
+  border: none;
 }
 
 .about__image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
+}
+
+.about__image img {
+  width: 100%;
+}
+
+.production {
+  margin-bottom: 130px;
+}
+
+.production__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.production__image img {
+  width: 100%;
+}
+
+.production__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.production__content--text {
+  padding-left: 90px;
+}
+
+.production__content--text h1 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.production__content--text h3 {
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 38px;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.production__content--text button {
+  background-color: #202020;
+  color: #ffffff;
+  padding: 18px 46px;
+  font-size: 1.375rem;
+  font-weight: 600;
+  border: none;
+}
+
+.departments {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-bottom: 110px;
+}
+
+.departments h1 {
+  margin-bottom: 70px;
+}
+
+.departments__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(430px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 65px;
+  width: 100%;
+}
+
+.departments__content--item .item__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.departments__content--item .item__person {
+  margin-bottom: 20px;
+}
+
+.departments__content--item .item__person p {
+  font-size: 1.375rem;
+}
+
+.departments__content--item .item__person p:nth-child(1) {
+  font-weight: 600;
+}
+
+.departments__content--item .serwis {
+  margin-bottom: 45px;
+}
+
+.departments__content--item span {
+  display: block;
+  height: 6px;
+  background-color: red;
+  margin-bottom: 30px;
+}
+
+.contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #202020;
+  color: #ffffff;
+  padding: 70px 40px;
+}
+
+.contact__header h1 {
+  margin-bottom: 70px;
+}
+
+.contact .form {
+  width: 100%;
+}
+
+.contact .form .content {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .form .content .row {
+  width: 100%;
+}
+
+.contact .form .content .row .row__full {
+  width: 100%;
+  margin-bottom: 54px;
+}
+
+.contact .form .content .row .row__half {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 54px;
+}
+
+.contact .form .content .row .row__half:nth-child(2) {
+  margin-left: 32px;
+}
+
+.contact .form .content .row input {
+  width: 100%;
+  height: 102px;
+  background-color: transparent;
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+  color: white;
+  font-size: 1.75rem;
+  padding-left: 20px;
+}
+
+.contact .form .content .row input::-webkit-input-placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row input:-ms-input-placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row input::-ms-input-placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row input::placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row input:focus-visible {
+  outline: 0;
+}
+
+.contact .form .content .row textarea {
+  width: 100%;
+  background-color: transparent;
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+  color: white;
+  font-size: 1.75rem;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.contact .form .content .row textarea::-webkit-input-placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row textarea:-ms-input-placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row textarea::-ms-input-placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row textarea::placeholder {
+  color: #D0D0D0;
+  font-size: 1.75rem;
+}
+
+.contact .form .content .row textarea:focus-visible {
+  outline: 0;
+}
+
+.contact .form .content .button {
+  width: 100%;
+}
+
+.contact .form .content .button button {
+  background-color: #ffffff;
+  color: #202020;
+  padding: 18px 46px;
+  font-size: 1.375rem;
+  font-weight: 600;
+  border: none;
+}
+
+.footer {
+  margin-bottom: 75px;
+}
+
+.footer__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__content--logo {
+  margin-bottom: 50px;
+}
+
+.footer__content--columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(430px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+}
+
+.footer__content--columns .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 480px;
+}
+
+.footer__content--columns .column a {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #202020;
+}
+
+.author {
+  border-top: 1px solid #D0D0D0;
+  padding: 10px 0 20px 0;
+  margin: 0px 40px;
 }
 /*# sourceMappingURL=style.css.map */
