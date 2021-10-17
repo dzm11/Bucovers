@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet" />
@@ -51,52 +52,54 @@
         </div>
       </header>
 
-      <div class="carousel">
+      <div class="carousel swiper mySwiper">
         <!-- http://kenwheeler.github.io/slick/ 
         https://codepen.io/microfront/pen/veagoK -->
-        <div class="carousel__element">
-          <div class="carousel__element--text"></div>
-          <div class="carousel__element--bestseller">
+        <div class="carousel__element swiper-wrapper">
+          <div class="carousel__element--text swiper-slide">Zastanawiasz sie jakie zadaszenie bedzie odpowiednie do Twojego basenu?</div>
+          <div class="carousel__element--bestseller swiper-slide">
             <div class="bestseller__image">
-              <img src="" alt="" />
+              <img src="app/img/bestseller.jpg" alt="" />
             </div>
             <div class="bestseller__name"></div>
           </div>
 
-          <div class="carousel__element--bestseller">
+          <div class="carousel__element--bestseller swiper-slide">
             <div class="bestseller__image">
-              <img src="" alt="" />
+              <img src="app/img/bestseller.jpg" alt="" />
             </div>
             <div class="bestseller__name"></div>
           </div>
 
-          <div class="carousel__element--bestseller">
+          <div class="carousel__element--bestseller swiper-slide">
             <div class="bestseller__image">
-              <img src="" alt="" />
+              <img src="app/img/bestseller.jpg" alt="" />
             </div>
             <div class="bestseller__name"></div>
           </div>
 
-          <div class="carousel__element--bestseller">
+          <div class="carousel__element--bestseller swiper-slide">
             <div class="bestseller__image">
-              <img src="" alt="" />
+              <img src="app/img/bestseller.jpg" alt="" />
             </div>
             <div class="bestseller__name"></div>
           </div>
 
-          <div class="carousel__element--bestseller">
+          <div class="carousel__element--bestseller swiper-slide">
             <div class="bestseller__image">
-              <img src="" alt="" />
+              <img src="app/img/bestseller.jpg" alt="" />
             </div>
             <div class="bestseller__name"></div>
           </div>
 
-          <div class="carousel__element--bestseller">
+          <div class="carousel__element--bestseller swiper-slide">
             <div class="bestseller__image">
-              <img src="" alt="" />
+              <img src="app/img/bestseller.jpg" alt="" />
             </div>
             <div class="bestseller__name"></div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
         <button></button>
       </div>
@@ -106,7 +109,7 @@
         <div class="service__image"><img src="app/img/service__header.jpg"
             alt="" /></div>
         <div class="service__stages">
-          <div>
+          <div class="color">
             <span></span>
             <div class="service__stages--number">01</div>
             <h2>Dokładny pomiar</h2>
@@ -114,7 +117,7 @@
               staff. Each card can have its own unique card holder name and card
               balance.</h3>
           </div>
-          <div>
+          <div class="color">
             <span></span>
             <div class="service__stages--number">02</div>
             <h2>Indywidualny projekt</h2>
@@ -122,7 +125,7 @@
               staff. Each card can have its own unique card holder name and card
               balance.</h3>
           </div>
-          <div>
+          <div class="color">
             <span></span>
             <div class="service__stages--number">03</div>
             <h2>Produkcja</h2>
@@ -130,7 +133,7 @@
               staff. Each card can have its own unique card holder name and card
               balance.</h3>
           </div>
-          <div>
+          <div class="color">
             <span></span>
             <div class="service__stages--number">04</div>
             <h2>Transport</h2>
@@ -138,7 +141,7 @@
               staff. Each card can have its own unique card holder name and card
               balance.</h3>
           </div>
-          <div>
+          <div class="color">
             <span></span>
             <div class="service__stages--number">05</div>
             <h2>Montaż</h2>
@@ -316,6 +319,7 @@
         <p>website made by melon.studio</p>
       </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app/js/script.js"></script>
   </body>
 </html>

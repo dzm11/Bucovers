@@ -325,10 +325,29 @@ body.open {
   margin-bottom: 160px;
 }
 
+.service__stages .color:nth-child(1) span {
+  background-color: #F8A71B;
+}
+
+.service__stages .color:nth-child(2) span {
+  background-color: #6AA5AC;
+}
+
+.service__stages .color:nth-child(3) span {
+  background-color: #DF8269;
+}
+
+.service__stages .color:nth-child(4) span {
+  background-color: #49656E;
+}
+
+.service__stages .color:nth-child(5) span {
+  background-color: #BFA49E;
+}
+
 .service__stages span {
   display: block;
   height: 6px;
-  background-color: red;
 }
 
 .service__stages--number {
@@ -488,8 +507,23 @@ body.open {
 .departments__content--item span {
   display: block;
   height: 6px;
-  background-color: red;
   margin-bottom: 30px;
+}
+
+.departments__content--item:nth-child(1) span {
+  background-color: #6AA5AC;
+}
+
+.departments__content--item:nth-child(2) span {
+  background-color: #DF8269;
+}
+
+.departments__content--item:nth-child(3) span {
+  background-color: #49656E;
+}
+
+.departments__content--item:nth-child(3) span:nth-child(2) {
+  background-color: #BFA49E;
 }
 
 .contact {
