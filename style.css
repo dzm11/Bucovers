@@ -303,6 +303,28 @@ body.open {
   margin: auto;
 }
 
+.carousel__element--text {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.carousel__element--bestseller {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel__element--bestseller .bestseller__image {
+  margin-bottom: 24px;
+}
+
+.carousel__element--bestseller .bestseller__name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .service__header {
   margin-bottom: 38px;
 }
