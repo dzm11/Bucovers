@@ -18,19 +18,28 @@
 .carousel{
     &__element{
         &--text{
-            font-size: $heading;
-            font-weight: $semibold;
-            line-height: normal;
+            h1{
+                font-size: $heading;
+                font-weight: $semibold;
+                line-height: normal;
+            }
         }
         &--bestseller{
             flex-direction: column;
             .bestseller__image{
+                width: 100%;
                 margin-bottom: 24px;
+                img{
+                    width: 100%;
+                }
             }
             .bestseller__name{
                 font-size: 2rem;
                 font-weight: $semibold;
             }
+        }
+        &--bestseller:nth-child(2){
+            margin-left: 50px;
         }
     }
 }

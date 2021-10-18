@@ -92,7 +92,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: clamp(1rem, 3vw, 4rem);
 }
 
 .flex {
@@ -303,8 +303,8 @@ body.open {
   margin: auto;
 }
 
-.carousel__element--text {
-  font-size: 3rem;
+.carousel__element--text h1 {
+  font-size: clamp(1rem, 3vw, 4rem);
   font-weight: 600;
   line-height: normal;
 }
@@ -317,12 +317,21 @@ body.open {
 }
 
 .carousel__element--bestseller .bestseller__image {
+  width: 100%;
   margin-bottom: 24px;
+}
+
+.carousel__element--bestseller .bestseller__image img {
+  width: 100%;
 }
 
 .carousel__element--bestseller .bestseller__name {
   font-size: 2rem;
   font-weight: 600;
+}
+
+.carousel__element--bestseller:nth-child(2) {
+  margin-left: 50px;
 }
 
 .service__header {
