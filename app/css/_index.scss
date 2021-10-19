@@ -58,7 +58,7 @@
 
     &__stages{
         display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 60px;
         margin-bottom: 160px;
         .color:nth-child(1){
@@ -110,11 +110,20 @@
 
 .about{
     margin-bottom: 130px;
+    @include breakpoint-down(medium) {
+        padding: 0 20px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
     &__content{
         flex: 1;
 
         &--text{
             padding-left: 70px;
+            padding-right: 20px;
+            @include breakpoint-down(medium) {
+            padding-left: 0;
+            }
             h1{
                 font-weight: $semibold;
                 margin-bottom: 15px;
@@ -122,9 +131,12 @@
             h3{
                 font-size: $body;
                 font-weight: $regular;
-                line-height: 38px;
+                line-height: #{"clamp(20px, 2vw, 38px)"};;
                 max-width: 700px;
                 margin-bottom: 40px;
+                @include breakpoint-down(medium) {
+                    max-width: 100%;
+                }
             }
             button{
                 background-color: $Black;
@@ -140,6 +152,9 @@
     &__image{
         flex: 1;
         width: 100%;
+        @include breakpoint-down(medium) {
+        margin-bottom: 40px;
+            }
         img{
             width: 100%;
         }
@@ -192,9 +207,10 @@
     }
     &__content{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
         gap: 65px;
         width: 100%;
+        padding: 0 40px;
         &--item{
             .item__title{
                 font-size: $smallheading;
@@ -332,7 +348,7 @@
         }
         &--columns{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             .column{
                 display: flex;
                 flex-direction: column;
