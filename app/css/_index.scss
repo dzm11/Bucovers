@@ -16,13 +16,24 @@
     }
 }
 .carousel{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
     &__element{
+        margin-bottom: 60px;
         &--text{
             h1{
                 font-size: $heading;
                 font-weight: $semibold;
                 line-height: normal;
+                @include breakpoint-down(small) {
+                    font-size: clamp(2rem, 3vw, 4rem);    
+                }
             }
+            @include breakpoint-down(small) {
+                width: 240px!important;         
+            }
+
         }
         &--bestseller{
             flex-direction: column;
@@ -40,13 +51,28 @@
         }
         &--bestseller:nth-child(2){
             margin-left: 50px;
+            @include breakpoint-down(small) {
+                margin-left: 0px;
+            }
         }
+    }
+    button{
+        background-color: $Black;
+        color: #ffffff;
+        padding: 18px 46px;
+        font-size: $body;
+        font-weight: $semibold;
+        border: none;
     }
 }
 
 .service{
     &__header{
         margin-bottom: 38px;
+        @include breakpoint-down(small) {
+            line-height: 43px;
+        }
+
     }
     &__image{
         width: 100%;
@@ -61,6 +87,9 @@
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 60px;
         margin-bottom: 160px;
+        @include breakpoint-down(small) {
+            gap: 100px;
+        }
         .color:nth-child(1){
             span{
                 background-color: $Orange;
@@ -93,6 +122,7 @@
         }
 
         &--number{
+            // font-size: #{"clamp(3rem, 20vw, 7.375rem)"};
             font-size: 7.375rem;
             line-height: 144px;
             margin-bottom: 7px;
@@ -111,7 +141,7 @@
 .about{
     margin-bottom: 130px;
     @include breakpoint-down(medium) {
-        padding: 0 20px;
+        // padding: 0 20px;
         flex-direction: column-reverse;
         align-items: flex-start;
     }
@@ -131,7 +161,7 @@
             h3{
                 font-size: $body;
                 font-weight: $regular;
-                line-height: #{"clamp(20px, 2vw, 38px)"};;
+                line-height: $body-lh;
                 max-width: 700px;
                 margin-bottom: 40px;
                 @include breakpoint-down(medium) {
@@ -163,9 +193,17 @@
 
 .production{
     margin-bottom: 130px;
+    @include breakpoint-down(medium) {
+        // padding:  0 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     &__image{
         flex: 1;
         width: 100%;
+        @include breakpoint-down(medium) {
+            margin-bottom: 40px;
+                }
         img{
             width: 100%;
         }
@@ -174,6 +212,9 @@
         flex: 1;
         &--text{
             padding-left: 90px;
+            @include breakpoint-down(medium) {
+                padding-left: 0;
+                }
             h1{
                 font-weight: $semibold;
                 margin-bottom: 15px;
@@ -181,9 +222,13 @@
             h3{
                 font-size: $body;
                 font-weight: $regular;
-                line-height: 38px;
+                // line-height: 38px;
+                line-height: $body-lh;
                 max-width: 800px;
                 margin-bottom: 40px;
+                @include breakpoint-down(medium) {
+                    max-width: 100%;
+                }
             }
             button{
                 background-color: $Black;
@@ -204,13 +249,16 @@
     margin-bottom: 110px;
     h1{
         margin-bottom: 70px;
+        @include breakpoint-down(small) {
+            line-height: 43px;
+        }
     }
     &__content{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
         gap: 65px;
         width: 100%;
-        padding: 0 40px;
+        // padding: 0 40px;
         &--item{
             .item__title{
                 font-size: $smallheading;
@@ -262,9 +310,15 @@
     background-color: $Black;
     color: #ffffff;
     padding: 70px 40px;
+    @include breakpoint-down(small) {
+        padding: 40px 20px;
+    }
     &__header{
         h1{
             margin-bottom: 70px;
+            @include breakpoint-down(small) {
+                line-height: 43px;
+            }
         }
     }
     .form{
@@ -274,16 +328,31 @@
             flex-direction: column;
             .row{
                 width: 100%;
+                @include breakpoint-down(medium) {
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                }
                 .row__full{
                     width: 100%;
                     margin-bottom: 54px;
+                    @include breakpoint-down(medium) {
+                        margin-bottom: 0px;
+                    }
                 }
                 .row__half{
                     flex: 1;
                     margin-bottom: 54px;
+                    @include breakpoint-down(medium) {
+                        margin-bottom: 0px;
+                    }
                 }
                 .row__half:nth-child(2){
                     margin-left: 32px;
+                    @include breakpoint-down(medium) {
+                        margin-left: 0px;
+                        margin-bottom: 0px;
+                        margin-top: 40px;
+                    }
                 }
                 input{
                     width: 100%;
@@ -302,6 +371,11 @@
                     &:focus-visible{
                         outline: 0;
                     }
+                    @include breakpoint-down(medium) {
+                        font-size: 1.45rem;
+                        height: 80px;
+                    }
+
 
                 }
                 textarea{
@@ -349,6 +423,7 @@
         &--columns{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            row-gap: 20px;
             .column{
                 display: flex;
                 flex-direction: column;

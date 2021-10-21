@@ -10,7 +10,9 @@ $Black: #202020;
 
 $small: 1.125rem; //18  p
 // $body: 1.375rem; //22   h3
-$body: #{"clamp(1rem, 1.5vw, 1.375rem)"};
+// $body: #{"clamp(1rem, 1.5vw, 1.375rem)"};
+$body: 18px;
+$body-lh: #{"clamp(30px, 2vw, 38px)"};
 $smallheading: 1.75rem; //28    h2
 $heading: #{"clamp(2.7rem, 3vw, 4rem)"}; //48    h1
 
