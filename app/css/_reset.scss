@@ -75,3 +75,14 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Remove all rounding on iOS forms */
+
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}

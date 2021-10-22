@@ -79,6 +79,16 @@ select {
   }
 }
 
+/* Remove all rounding on iOS forms */
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
 body {
   font-size: 1,375rem;
   font-family: 'Montserrat', sans-serif;
@@ -154,6 +164,8 @@ h1 {
 }
 
 body.open {
+  margin: 0;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -189,7 +201,7 @@ body.open {
   pointer-events: all;
 }
 
-.nav .mobile .mobile__menu {
+.nav .mobile .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,8 +219,9 @@ body.open {
   text-align: center;
 }
 
-.nav .mobile .mobile__menu .menu__items {
+.nav .mobile .menu .menu__items {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,32 +233,13 @@ body.open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 100px 0;
 }
 
-.nav .mobile .mobile__menu .menu__items li {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.nav .mobile .mobile__menu .menu__items .menu-item a {
-  opacity: 0;
-  font-size: 1.5625rem;
-  width: 100%;
-}
-
-@media (max-width: 39.9375em) {
-  .nav .mobile .mobile__menu .menu__items .menu-item a {
-    font-size: 1.25rem;
-  }
-}
-
-.nav .mobile .mobile__menu .menu__items .menu-item a:nth-child(1) {
-  -webkit-transition: all 0.5s ease 0.2s;
-  transition: all 0.5s ease 0.2s;
-}
-
-.nav .mobile .mobile__menu .menu__items .menu-item a.fade {
-  opacity: 1;
+.nav .mobile .menu .menu__items a {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav .burger {
@@ -400,6 +394,14 @@ body.open {
 
 .service__image img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 39.9375em) {
+  .service__image img {
+    height: 400px;
+  }
 }
 
 .service__stages {
@@ -413,7 +415,7 @@ body.open {
 
 @media (max-width: 39.9375em) {
   .service__stages {
-    gap: 100px;
+    gap: 60px;
   }
 }
 
@@ -446,6 +448,14 @@ body.open {
   font-size: 7.375rem;
   line-height: 144px;
   margin-bottom: 7px;
+}
+
+@media (max-width: 68.6875em) {
+  .service__stages--number {
+    font-size: 6.375rem;
+    line-height: 104px;
+    margin-bottom: 0px;
+  }
 }
 
 .service__stages h2 {
@@ -898,10 +908,19 @@ body.open {
 }
 
 .footer__content--columns .column a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 10px;
   font-size: 1.125rem;
   font-weight: 500;
   color: #202020;
+}
+
+.footer__content--columns .column a img {
+  width: 36px;
+  height: auto;
+  margin-right: 25px;
 }
 
 .author {

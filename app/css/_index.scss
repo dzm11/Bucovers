@@ -79,6 +79,10 @@
         margin-bottom: 75px;
         img{
             width: 100%;
+            object-fit: cover;
+            @include breakpoint-down(small) {
+                height: 400px;
+            }
         }
     }
 
@@ -88,8 +92,9 @@
         gap: 60px;
         margin-bottom: 160px;
         @include breakpoint-down(small) {
-            gap: 100px;
+            gap: 60px;
         }
+
         .color:nth-child(1){
             span{
                 background-color: $Orange;
@@ -126,6 +131,11 @@
             font-size: 7.375rem;
             line-height: 144px;
             margin-bottom: 7px;
+            @include breakpoint-down(medium) {
+                font-size: 6.375rem;
+                line-height: 104px;
+                margin-bottom: 0px;
+            }
         }
         h2{
             margin-bottom: 10px;
@@ -429,10 +439,16 @@
                 flex-direction: column;
                 min-width: 480px;
                 a{
+                    display: flex;
                     margin-bottom: 10px;
                     font-size: $small;
                     font-weight: $medium;
                     color: $Black;
+                    img{
+                        width: 36px;
+                        height: auto;
+                        margin-right: 25px;
+                    }
                 }
             }
         }
