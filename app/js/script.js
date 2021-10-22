@@ -4,6 +4,11 @@ const menuItems = document.querySelector('.mobile');
 const items = document.querySelectorAll('.nav .mobile .mobile__menu .menu-item a');
 const social = document.querySelectorAll('.nav .mobile__menu .menu__social .row');
 
+const html = document.documentElement;
+
+const initialHeight = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
 document.documentElement.style.setProperty('overflow', 'auto')
 const metaViewport = document.querySelector('meta[name=viewport]')
 metaViewport.setAttribute('content', 'height=' + initialHeight + 'px, width=device-width, initial-scale=1.0')
