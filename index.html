@@ -39,23 +39,29 @@
             <a href="index.html"><img src="app/img/logo.svg" alt="" /></a>
           </div>
           <div class="nav__left nav__links hide-for-mobile">
-            <a href="#">Strona główna</a>
-            <a href="#">Konfigurator</a>
-            <a href="#">Zadaszenia</a>
-            <a href="#">O nas</a>
-            <a href="#">Kontakt</a>
+            <ul class="flex">
+              <li class="current-menu-item"><a href="#">Strona Główna</a></li>
+              <li><a href="#">Konfigurator</a>
+              <li><a href="#">Zadaszenia</a></li>
+              <li><a href="#">O nas</a>
+                <ul>
+                  <li class="submenu"><a href="#">Nasze usługi</a></li>
+                  <li class="submenu"><a href="#">Aktualności</a></li>
+                  <li class="submenu"><a href="#">Produkcja</a></li>
+                  <li class="submenu"><a href="#">Technologia</a></li>
+                  <li class="submenu"><a href="#">Katalog produktów</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
           </div>
         </nav>
-        <!-- https://www.w3schools.com/howto/howto_css_fullscreen_video.asp -->
         <div class="header__video">
-          <!-- <img src="/app/img/header.jpg" alt="" class="" /> -->
           <img src="app/img/arrow_down.svg" alt="" />
         </div>
       </header>
 
       <div class="carousel flex swiper mySwiper container">
-        <!-- http://kenwheeler.github.io/slick/ 
-        https://codepen.io/microfront/pen/veagoK -->
         <div class="carousel__element swiper-wrapper">
           <div class="carousel__element--text swiper-slide"><h1>Zastanawiasz sie jakie zadaszenie bedzie odpowiednie do Twojego basenu?</h1></div>
           <div class="carousel__element--bestseller flex flex-ai-c swiper-slide">

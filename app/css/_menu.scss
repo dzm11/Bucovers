@@ -70,24 +70,39 @@ body.open {
 		font-size: $small;
 		font-weight: 600;
         color: white;
-		@include breakpoint-down(large) {
-			// font-weight: 400;
-		}
-		li:not(:last-child) {
-			margin-right: 58px;
-			@include breakpoint-down(large) {
-				// margin-right: 20px;
+		ul{
+			list-style: none;
+			li{
+				a{
+					color: white;
+					margin-right: 58px;
+				}
+				a:not(:last-child) {
+						margin-right: 58px;
+					}
+				ul{
+						display: none;
+				}
 			}
+
 		}
-        a{
-            color: white;
-        }
-		a:not(:last-child) {
-			margin-right: 58px;
-			@include breakpoint-down(large) {
-				// margin-right: 20px;
-			}
-		}
+		ul li:hover > ul
+{
+	display:block
+}
+		// li:not(:last-child) {
+		// 	margin-right: 58px;
+		// 	@include breakpoint-down(large) {
+		// 	}
+		// }
+        // a{
+        //     color: white;
+        // }
+		// a:not(:last-child) {
+		// 	margin-right: 58px;
+		// 	@include breakpoint-down(large) {
+		// 	}
+		// }
 	}
 }
 

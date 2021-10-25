@@ -273,16 +273,25 @@ body.open {
   color: white;
 }
 
-.nav__links li:not(:last-child) {
-  margin-right: 58px;
+.nav__links ul {
+  list-style: none;
 }
 
-.nav__links a {
+.nav__links ul li a {
   color: white;
+  margin-right: 58px;
 }
 
-.nav__links a:not(:last-child) {
+.nav__links ul li a:not(:last-child) {
   margin-right: 58px;
+}
+
+.nav__links ul li ul {
+  display: none;
+}
+
+.nav__links ul li:hover > ul {
+  display: block;
 }
 
 .header__video {
@@ -927,5 +936,18 @@ body.open {
   border-top: 1px solid #D0D0D0;
   padding: 10px 0 20px 0;
   margin: 0px 40px;
+}
+
+.padding {
+  padding-bottom: 40px;
+  margin-bottom: 110px;
+}
+
+.nav__links_black a {
+  color: black;
+}
+
+.nav__logo a img {
+  height: 27px;
 }
 /*# sourceMappingURL=style.css.map */
