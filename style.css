@@ -278,8 +278,13 @@ body.open {
 }
 
 .nav__links ul li a {
-  color: white;
+  color: #ffffff;
   margin-right: 58px;
+  text-decoration: none;
+}
+
+.nav__links ul li .black {
+  color: #202020;
 }
 
 .nav__links ul li a:not(:last-child) {
@@ -290,8 +295,28 @@ body.open {
   display: none;
 }
 
+.nav__links ul li:nth-child(4) {
+  padding-bottom: 20px;
+}
+
 .nav__links ul li:hover > ul {
+  margin-top: 20px;
+  background-color: white;
+  position: absolute;
+  padding-left: 0;
   display: block;
+}
+
+.nav__links ul li:hover > ul li {
+  background: white;
+  position: relative;
+  right: 20px;
+  padding: 20px 0px 20px 20px;
+}
+
+.nav__links ul li:hover > ul li a {
+  color: black;
+  margin-right: 10px;
 }
 
 .header__video {
@@ -949,5 +974,18 @@ body.open {
 
 .nav__logo a img {
   height: 27px;
+}
+
+.service {
+  background-image: url(app/img/zadaszenie.jpg);
+}
+
+.header__image {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

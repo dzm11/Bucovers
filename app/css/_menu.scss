@@ -73,9 +73,14 @@ body.open {
 		ul{
 			list-style: none;
 			li{
+				
 				a{
-					color: white;
+					color: #ffffff;
 					margin-right: 58px;
+					text-decoration: none;
+				}
+				.black{
+					color: $Black;
 				}
 				a:not(:last-child) {
 						margin-right: 58px;
@@ -84,11 +89,30 @@ body.open {
 						display: none;
 				}
 			}
+			li:nth-child(4){
+				padding-bottom: 20px;
+			}
 
 		}
 		ul li:hover > ul
 {
-	display:block
+	margin-top: 20px;
+	background-color: white;
+	position: absolute;
+	padding-left: 0;
+	display:block;
+	li{
+		background: white;
+position: relative;
+right: 20px;
+padding: 20px 0px 20px 20px;
+		a{
+			color: black;
+			margin-right: 10px;
+
+		}
+
+	}
 }
 		// li:not(:last-child) {
 		// 	margin-right: 58px;
