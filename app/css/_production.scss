@@ -1,0 +1,19 @@
+.img__fullwidht{
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 90px);
+    background-image: url(app/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    img{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+.production__content{
+    max-width: 750px;
+}

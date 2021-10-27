@@ -7,8 +7,9 @@ body.open {
 	display: flex;
 }
 .nav {
-	height: 72px;
+	height: 90px;
 	font-weight: 600;
+	padding: 0 40px;
 	.mobile {
 		position: absolute;
 		top: 0;
@@ -38,11 +39,11 @@ body.open {
 				flex-direction: column;
 				justify-items: center;
 				align-items: center;
-				padding: 100px 0;
+				padding: 40px 0;
 				a {
 					color: white;
-					padding-top: 20px;
-					padding-bottom: 20px;
+					// padding-top: 20px;
+					// padding-bottom: 20px;
 				}
 			}
 		}
@@ -56,11 +57,23 @@ body.open {
 				right: 20px;
 			}
 		span {
-			background-color: white;
+			background-color: $Black;
 			display: block;
 			height: 4px;
 			width: 42px;
 			margin-bottom: 7px;
+		}
+		.black{
+			background-color: $Black;
+		}
+		.black1.open{
+			background-color: white;
+		}
+		.black2.open{
+			background-color: white;
+		}
+		.black3.open{
+			background-color: white;
 		}
 	}
 	.open {
@@ -72,6 +85,9 @@ body.open {
         color: white;
 		ul{
 			list-style: none;
+			// height: 100%;
+margin-bottom: 0px;
+margin-top: 0px;
 			li{
 				
 				a{
@@ -90,7 +106,8 @@ body.open {
 				}
 			}
 			li:nth-child(4){
-				padding-bottom: 20px;
+				padding-bottom: 40px;
+				padding-top: 40px;
 			}
 
 		}
@@ -114,6 +131,12 @@ padding: 20px 0px 20px 20px;
 
 	}
 }
+.nav__links_black{
+    a{
+        color: black;
+    }
+}
+
 		// li:not(:last-child) {
 		// 	margin-right: 58px;
 		// 	@include breakpoint-down(large) {
@@ -129,4 +152,5 @@ padding: 20px 0px 20px 20px;
 		// }
 	}
 }
+
 

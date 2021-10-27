@@ -1,272 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>DEMO TITLE</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div>
         <header>
-            <nav class="nav flex flex-jc-sb flex-ai-c container">
-                <div class="nav-icon burger hide-for-desktop">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <nav class="nav flex flex-jc-sb flex-ai-c">
+              <div class="nav-icon burger hide-for-desktop">
+                <span class="black1"></span>
+                <span class="black2"></span>
+                <span class="black3"></span>
+              </div>
+              <div class="mobile hide-for-desktop">
+                <div class="menu">
+                  <div class="menu__items flex-jc-sb">
+                    <a href="index.html">Strona główna</a>
+                    <a href="konfigurator.html">Konfigurator</a>
+                    <a href="zadaszenia.html">Zadaszenia</a>
+                    <a href="o_nas.html">O nas</a>
+                    <a href="services.html">Nasze usługi</a>
+                    <a href="blog.html">Aktualności</a>
+                    <a href="production.html">Produkcja</a>
+                    <a href="technology.html">Technologia</a>
+                    <a href="kontakt.html">Kontakt</a>
+                  </div>
                 </div>
-                <div class="mobile hide-for-desktop">
-                    <div class="menu">
-                        <div class="menu__items flex-jc-sb">
-                            <a href="#">Strona główna</a>
-                            <a href="#">Konfigurator</a>
-                            <a href="#">Zadaszenia</a>
-                            <a href="#">O nas</a>
-                            <a href="#">Kontakt</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav__logo hide-for-mobile">
-                    <a href="index.html"><img src="app/img/logo-black.svg" alt="" /></a>
-                </div>
-                <div class="nav__left nav__links nav__links_black hide-for-mobile black">
-                    <a href="#">Strona główna</a>
-                    <a href="#">Konfigurator</a>
-                    <a href="#">Zadaszenia</a>
-                    <a href="#">O nas</a>
-                    <a href="#">Kontakt</a>
-                </div>
+              </div>
+              <div class="nav__logo hide-for-mobile">
+                <a href="index.html"><img src="app/img/logo-black.svg" alt="" /></a>
+              </div>
+              <div class="nav__left nav__links hide-for-mobile">
+                <ul class="flex flex-ai-c">
+                  <li class="current-menu-item"><a class="black" href="index.html">Strona Główna</a></li>
+                  <li><a class="black" href="konfigurator.html">Konfigurator</a>
+                  <li><a class="black" href="zadaszenia.html">Zadaszenia</a></li>
+                  <li><a class="black" href="o_nas.html">O nas</a>
+                    <ul>
+                      <li class="submenu black"><a href="services.html">Nasze usługi</a></li>
+                      <li class="submenu black"><a href="blog.html">Aktualności</a></li>
+                      <li class="submenu black"><a href="production.html">Produkcja</a></li>
+                      <li class="submenu black"><a href="technology.html">Technologia</a></li>
+                      <li class="submenu black"><a href="#">Katalog produktów</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="black" href="kontakt.html">Kontakt</a></li>
+                </ul>
+              </div>
             </nav>
-        </header>
+          </header>
 
-        <div class="technology">
-            <div class="technolog__title"> <h2>Dlaczego warto wybrać zadaszenia marki Bucovers?</h2> </div>
-            <div class="technology__point">
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>1. KONSTRUKCJA </h2></div>
-                    <div class="technology__point--content"><p>Posiadamy trzy opatentowane rodzaje profili aluminiowych, nowością która wprowadziliśmy na  rynek jest nowy system wzmocnionych profili aluminiowych ,,XXL”, który przystosowany jest do  konstrukcji o bardzo dużych gabarytach. Profile Buc overs potwierdzone są wytrzymałością oraz  odpornością na obciążenia z certyfikowanego stopu aluminium. 
-
-                        Profile aluminiowe Bucovers są malowane proszkowo w 400 stopniach Celsjusza i w praktyce niezniszczalne, odporne na wilgoć i działanie reagentów dodawanych do wody w basenach, takich jak chlor czy tlen aktywny.  
-                        
-                        Profile Bucovers produkowane są w największej hucie w Polsce. Najwyższej jakości faktura na profilu.</p>
-                    </div>
-                    <div class="technology__point--images">
-                        <div class="image">
-                            <img src="" alt="">
-                            <p>L</p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <p>XL</p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <p>XXL</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>2. KOLORY PROFILI </h2></div>
-                    <div class="technology__point--content"><p>Posiadamy trzy kolory profili: DB 703 (antracyt), RAL 9007 (siwy) oraz RAL 9004 (czarny).  Wiemy jednak, że ważne są walory estetyczne i dopasowanie do istniejących już budynków, dlatego oprócz standardowych kolorów profili, masz możliwość wyboru pokrycia basenowego w dowolnym kolorze z palety RAL.W standardzie każde zadaszenie zawiera drzwi przesuwne lub uchylne, które mogą zostać umieszczone na największym module (po prawej / lewej stronie) lub na ścianie szczytowej. </p>
-                    </div>
-                    <div class="technology__point--images">
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Antracyt</h4>
-                            <p>BD 703</p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Siwy</h4>
-                            <p>RAL 9007</p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Czarny</h4>
-                            <p>RAL 9004</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>3. WYPEŁNIENIE</h2></div>
-                    <div class="technology__point--content"><p>Wypełnienie w postaci poliwęglanu kanałowego o grubości 8 mm daje izolację oraz chroni przed utratą ciepłą, poliwęglan lity, czyli drugie pokrycie o grubości 4 mm produkowane jest przez światowego lidera w tej dziedzinie - szwedzką firmę Arlaplast, posiada unikalne zabezpieczenie przed szkodliwym działaniem promieni UV.</p>
-                    </div>
-                    <div class="technology__point--images">
-                        <div class="image">
-                            <img src="" alt="">
-                            <p>Poliwęglan lity 4mm</p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <p>Poliwęglan kanałowy 8mm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="technology__point">
-
-                    <div class="technology__point--title"><h2>4. PRODUKT CERTYFIKOWANY - TUV</h2></div>
-                    <div>
-                        <img src="" alt="">
-                        <div class="technology__point--content"><p>Zadaszenia marki Bucovers przeszły badania wytrzymałościowe i jakościowe. Certyfikacja dobrowolna BQC Elements stanowi dodatkową wartość i potwierdzenie deklarowanych cech  produktu.
-
-                            Zadaszenia Bucovers spełniają wszystkie europejskie normy użytkowania oraz obciążenia śniegiem i naporem wiatru.
-                            Są trwałe i bezpiecznie co przy ich nowoczesnym wyglądzie dostosowanym do indywidualnych potrzeb użytkownika czyni
-                            z nich jeden z najlepszych produktów na wymagającym europejskim rynku.
-                            </p></div>
-                    </div>
-
-                </div>
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>5. WYPOSAŻENIE</h2></div>
-                    <div class="technology__point--content"><p>Całe wyposażenie Bucovers produkowane jest na zamówienie, dopasowane tylko do naszych  zadaszeń. Elementy wykończeniowe ze stali nierdzewnej, które gwarantują odporność na czynniki atmosferyczne oraz podwyższoną wilgotność. Podwójne koła, na których swobodnie przesuwają się sekcje dachu, są produktem zaprojektowanym specjalnie dla firmy Bucovers, a uszczelki pomiędzy sekcjami to wynik użycia nowoczesnej technologii produktów gumowych. Głównie stawiamy na funkcjonalność,  jakość oraz estetykę naszych produktów czyli żadnych widocznych elementów  montażowych.</p>
-                    </div>
-                    <div class="technology__point--images">
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Blokady</h4>
-                            <p>Każdy moduł zadaszenia możesz łatwo zablokować poprzez trzpień hamulca oraz  zabezpieczyć zadaszenie przed zmiennymi warunkami atmosferycznymi za pomocą zasuw  przeciwwiatrowych, które znajdują się na ścianach czołowych. 
-                            </p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Pod kluczem</h4>
-                            <p>Posiadamy funkcję zabezpieczeń naszych zadaszeń. Za pomocą klucza możesz zamknąć  zadaszenie, co daje bezpieczeństwo dla dzieci oraz zwierząt. 
-                            </p>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Przekrój</h4>
-                            <p>Tylko u nas moduły zadaszeń przesuwają się po prowadnicach na wózkach, które zostały z  dużą uwagą i dokładnością zaprojektowane przez naszych projektantów. Jest to  innowacyjny aspekt w projektach naszych zadaszeń, który wpływa na lekkość przesuwania segmentów.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>6. PROWADNICE </h2></div>
-                    <div class="technology__point--content"><p>Prowadnice, które używamy są przystosowane wyłączenie do zadaszeń marki Bucovers. Szyny z  pewnością zapewniają komfort w użytkowaniu oraz są bezpieczne dla dzieci.  W ofercie posiadamy trzy rodzaje prowadnic, które oferujemy w zależności od gabarytów i ciężaru  zadaszenia. System ,,XXL” realizujemy w projektach powyżej 7 metrów szerokości. 
-                    </p>
-                    </div>
-                    <div class="technology__point--images">
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Szyny L</h4>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Szyny XL</h4>
-                        </div>
-                        <div class="image">
-                            <img src="" alt="">
-                            <h4>Szyny XXL</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>7. NOWOCZESNA
-                        TECHNIKA USZCZELNIANIA </h2></div>
-                    <div class="technology__point--content"><p>Oferujemy najnowszy system podwójnego uszczelnienia modułów marki Bucovers. Polega ono na  użyciu dwóch fartuchów gumowych, dzięki którym zadaszenie naszej produkcji zawiera  odpowiednią izolacyjność.  </p></div>
-                </div>
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>8. NAPĘD ELEKTRYCZNY</h2></div>
-                    <div class="technology__point--content"><p>Dodatkową opcją jest możliwość zainstalowania napędu elektrycznego – opatentowanego  systemu, który ułatwi zamykanie i otwieranie zadaszenia. Składają się na to realne korzyści  przekładające się na funkcjonalność i przede wszystkim wygodę użytkowania.
-                        Automatyka jest połączona z aplikacją mobilną, dzięki której z każdego miejsca na świecie możesz  zamknąć lub otworzyć zadaszenie.</p></div>
-                </div>
-                <div class="technology__point">
-                    <div class="technology__point--title"><h2>9. GWARANCJA</h2></div>
-                    <div class="technology__point--content"><p>Producent zapewnia 2 lata gwarancji na konstrukcję i montaż zadaszeń marki Bucovers. Najwyższej  jakości serwis z długą gwarancją!
-                        Jesteśmy dostępni na każdy telefon. 
-                        
-                        Poliwęglan objęty jest 10 letnią gwarancją producenta 
-                        </p></div>
-                </div>
+      <div class="technology">
+        <div class="technolog__title"><h2>Dlaczego warto wybrać zadaszenia marki Bucovers?</h2></div>
+        <div class="technology__point">
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>1. KONSTRUKCJA</h2></div>
+            <div class="technology__point--content"><p>Posiadamy trzy opatentowane rodzaje profili aluminiowych, nowością która wprowadziliśmy na rynek jest nowy system wzmocnionych profili aluminiowych ,,XXL”, który przystosowany jest do konstrukcji o bardzo dużych gabarytach. Profile Buc overs potwierdzone są wytrzymałością oraz odpornością na obciążenia z certyfikowanego stopu aluminium. Profile aluminiowe Bucovers są malowane proszkowo w 400 stopniach Celsjusza i w praktyce niezniszczalne, odporne na wilgoć i działanie reagentów dodawanych do wody w basenach, takich jak chlor czy tlen aktywny. Profile Bucovers produkowane są w największej hucie w Polsce. Najwyższej jakości faktura na profilu.</p></div>
+            <div class="technology__point--images">
+              <div class="image">
+                <img src="" alt="" />
+                <p>L</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <p>XL</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <p>XXL</p>
+              </div>
             </div>
+          </div>
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>2. KOLORY PROFILI</h2></div>
+            <div class="technology__point--content"><p>Posiadamy trzy kolory profili: DB 703 (antracyt), RAL 9007 (siwy) oraz RAL 9004 (czarny). Wiemy jednak, że ważne są walory estetyczne i dopasowanie do istniejących już budynków, dlatego oprócz standardowych kolorów profili, masz możliwość wyboru pokrycia basenowego w dowolnym kolorze z palety RAL.W standardzie każde zadaszenie zawiera drzwi przesuwne lub uchylne, które mogą zostać umieszczone na największym module (po prawej / lewej stronie) lub na ścianie szczytowej.</p></div>
+            <div class="technology__point--images">
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Antracyt</h4>
+                <p>BD 703</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Siwy</h4>
+                <p>RAL 9007</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Czarny</h4>
+                <p>RAL 9004</p>
+              </div>
+            </div>
+          </div>
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>3. WYPEŁNIENIE</h2></div>
+            <div class="technology__point--content"><p>Wypełnienie w postaci poliwęglanu kanałowego o grubości 8 mm daje izolację oraz chroni przed utratą ciepłą, poliwęglan lity, czyli drugie pokrycie o grubości 4 mm produkowane jest przez światowego lidera w tej dziedzinie - szwedzką firmę Arlaplast, posiada unikalne zabezpieczenie przed szkodliwym działaniem promieni UV.</p></div>
+            <div class="technology__point--images">
+              <div class="image">
+                <img src="" alt="" />
+                <p>Poliwęglan lity 4mm</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <p>Poliwęglan kanałowy 8mm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>4. PRODUKT CERTYFIKOWANY - TUV</h2></div>
+            <div>
+              <img src="" alt="" />
+              <div class="technology__point--content"><p>Zadaszenia marki Bucovers przeszły badania wytrzymałościowe i jakościowe. Certyfikacja dobrowolna BQC Elements stanowi dodatkową wartość i potwierdzenie deklarowanych cech produktu. Zadaszenia Bucovers spełniają wszystkie europejskie normy użytkowania oraz obciążenia śniegiem i naporem wiatru. Są trwałe i bezpiecznie co przy ich nowoczesnym wyglądzie dostosowanym do indywidualnych potrzeb użytkownika czyni z nich jeden z najlepszych produktów na wymagającym europejskim rynku.</p></div>
+            </div>
+          </div>
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>5. WYPOSAŻENIE</h2></div>
+            <div class="technology__point--content"><p>Całe wyposażenie Bucovers produkowane jest na zamówienie, dopasowane tylko do naszych zadaszeń. Elementy wykończeniowe ze stali nierdzewnej, które gwarantują odporność na czynniki atmosferyczne oraz podwyższoną wilgotność. Podwójne koła, na których swobodnie przesuwają się sekcje dachu, są produktem zaprojektowanym specjalnie dla firmy Bucovers, a uszczelki pomiędzy sekcjami to wynik użycia nowoczesnej technologii produktów gumowych. Głównie stawiamy na funkcjonalność, jakość oraz estetykę naszych produktów czyli żadnych widocznych elementów montażowych.</p></div>
+            <div class="technology__point--images">
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Blokady</h4>
+                <p>Każdy moduł zadaszenia możesz łatwo zablokować poprzez trzpień hamulca oraz zabezpieczyć zadaszenie przed zmiennymi warunkami atmosferycznymi za pomocą zasuw przeciwwiatrowych, które znajdują się na ścianach czołowych.</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Pod kluczem</h4>
+                <p>Posiadamy funkcję zabezpieczeń naszych zadaszeń. Za pomocą klucza możesz zamknąć zadaszenie, co daje bezpieczeństwo dla dzieci oraz zwierząt.</p>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Przekrój</h4>
+                <p>Tylko u nas moduły zadaszeń przesuwają się po prowadnicach na wózkach, które zostały z dużą uwagą i dokładnością zaprojektowane przez naszych projektantów. Jest to innowacyjny aspekt w projektach naszych zadaszeń, który wpływa na lekkość przesuwania segmentów.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>6. PROWADNICE</h2></div>
+            <div class="technology__point--content"><p>Prowadnice, które używamy są przystosowane wyłączenie do zadaszeń marki Bucovers. Szyny z pewnością zapewniają komfort w użytkowaniu oraz są bezpieczne dla dzieci. W ofercie posiadamy trzy rodzaje prowadnic, które oferujemy w zależności od gabarytów i ciężaru zadaszenia. System ,,XXL” realizujemy w projektach powyżej 7 metrów szerokości.</p></div>
+            <div class="technology__point--images">
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Szyny L</h4>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Szyny XL</h4>
+              </div>
+              <div class="image">
+                <img src="" alt="" />
+                <h4>Szyny XXL</h4>
+              </div>
+            </div>
+          </div>
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>7. NOWOCZESNA TECHNIKA USZCZELNIANIA</h2></div>
+            <div class="technology__point--content"><p>Oferujemy najnowszy system podwójnego uszczelnienia modułów marki Bucovers. Polega ono na użyciu dwóch fartuchów gumowych, dzięki którym zadaszenie naszej produkcji zawiera odpowiednią izolacyjność.</p></div>
+          </div>
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>8. NAPĘD ELEKTRYCZNY</h2></div>
+            <div class="technology__point--content"><p>Dodatkową opcją jest możliwość zainstalowania napędu elektrycznego – opatentowanego systemu, który ułatwi zamykanie i otwieranie zadaszenia. Składają się na to realne korzyści przekładające się na funkcjonalność i przede wszystkim wygodę użytkowania. Automatyka jest połączona z aplikacją mobilną, dzięki której z każdego miejsca na świecie możesz zamknąć lub otworzyć zadaszenie.</p></div>
+          </div>
+          <div class="technology__point">
+            <div class="technology__point--title"><h2>9. GWARANCJA</h2></div>
+            <div class="technology__point--content"><p>Producent zapewnia 2 lata gwarancji na konstrukcję i montaż zadaszeń marki Bucovers. Najwyższej jakości serwis z długą gwarancją! Jesteśmy dostępni na każdy telefon. Poliwęglan objęty jest 10 letnią gwarancją producenta</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact flex flex-ai-c">
+        <div class="contact__header">
+          <h1>Napisz do nas!</h1>
         </div>
 
-        <div class="contact flex flex-ai-c">
-            <div class="contact__header">
-                <h1>Napisz do nas!</h1>
+        <form id="enquiry" class="form">
+          <div class="content flex">
+            <div class="row flex">
+              <div class="row__full">
+                <!-- <label for="fname">Imię i nazwisko*</label> -->
+                <input type="text" name="Imie" id="" placeholder="Imię i nazwisko*" required />
+              </div>
             </div>
 
-            <form id="enquiry" class="form">
-                <div class="content flex">
-                    <div class="row flex">
-                        <div class="row__full">
-                            <!-- <label for="fname">Imię i nazwisko*</label> -->
-                            <input type="text" name="Imie" id="" placeholder="Imię i nazwisko*" required />
-                        </div>
-                    </div>
+            <div class="row flex">
+              <div class="row__half">
+                <!-- <label for="email">Email*</label> -->
+                <input type="email" name="email" id="" placeholder="Podaj adres email" required />
+              </div>
 
-                    <div class="row flex">
-                        <div class="row__half">
-                            <!-- <label for="email">Email*</label> -->
-                            <input type="email" name="email" id="" placeholder="Podaj adres email" required />
-                        </div>
-
-                        <div class="row__half">
-                            <!-- <label for="number">Numer telefonu</label> -->
-                            <input type="text" name="Numer_Telefonu" id="" placeholder="Podaj swój numer telefonu" />
-                        </div>
-                    </div>
-
-                    <div class="row flex">
-                        <div class="row__full">
-                            <!-- <label for="textarea">Twoja wiadomość ...</label> -->
-                            <textarea name="Wiadomość" id="" cols="100" rows="10" placeholder="Wpisz treść wiadomości"
-                                required></textarea>
-                        </div>
-                    </div>
-                    <div class="button flex flex-jc-c">
-                        <button type="submit">Wyślij wiadomość</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <div class="footer container">
-            <div class="footer__content flex">
-                <div class="footer__content--logo"><img src="app/img/logo-black.svg" alt="" /></div>
-                <div class="footer__content--columns">
-                    <div class="column">
-                        <a href="">O nas</a>
-                        <a href="">Nasze usługi</a>
-                        <a href="">Katalog produktów</a>
-                        <a href="">Kontakt</a>
-                    </div>
-                    <div class="column">
-                        <a href="">Konfigurator</a>
-                        <a href="">Zadaszenia</a>
-                        <a href="">Galeria</a>
-                        <a href="">Polityka prywatności</a>
-                    </div>
-                    <div class="column">
-                        <a href="">Aktualności</a>
-                        <a href="">Produkcja</a>
-                        <a href="">Technologia</a>
-                    </div>
-                    <div class="column">
-                        <a href=""><img src="app/img/Frame.svg" alt="">Instagram</a>
-                        <a href=""><img src="app/img/Vector-1.svg" alt="">Facebook</a>
-                        <a href=""><img src="app/img/Vector.svg" alt="">Youtube</a>
-                    </div>
-                </div>
+              <div class="row__half">
+                <!-- <label for="number">Numer telefonu</label> -->
+                <input type="text" name="Numer_Telefonu" id="" placeholder="Podaj swój numer telefonu" />
+              </div>
             </div>
-        </div>
 
-        <div class="author flex flex-jc-c">
-            <p>website made by melon.studio</p>
+            <div class="row flex">
+              <div class="row__full">
+                <!-- <label for="textarea">Twoja wiadomość ...</label> -->
+                <textarea name="Wiadomość" id="" cols="100" rows="10" placeholder="Wpisz treść wiadomości" required></textarea>
+              </div>
+            </div>
+            <div class="button flex flex-jc-c">
+              <button type="submit">Wyślij wiadomość</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer container">
+        <div class="footer__content flex">
+          <div class="footer__content--logo"><img src="app/img/logo-black.svg" alt="" /></div>
+          <div class="footer__content--columns">
+            <div class="column">
+              <a href="">O nas</a>
+              <a href="">Nasze usługi</a>
+              <a href="">Katalog produktów</a>
+              <a href="">Kontakt</a>
+            </div>
+            <div class="column">
+              <a href="">Konfigurator</a>
+              <a href="">Zadaszenia</a>
+              <a href="">Galeria</a>
+              <a href="">Polityka prywatności</a>
+            </div>
+            <div class="column">
+              <a href="">Aktualności</a>
+              <a href="">Produkcja</a>
+              <a href="">Technologia</a>
+            </div>
+            <div class="column">
+              <a href=""><img src="app/img/Frame.svg" alt="" />Instagram</a>
+              <a href=""><img src="app/img/Vector-1.svg" alt="" />Facebook</a>
+              <a href=""><img src="app/img/Vector.svg" alt="" />Youtube</a>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="author flex flex-jc-c">
+        <p>website made by melon.studio</p>
+      </div>
     </div>
     <script src="app/js/script.js"></script>
-</body>
-
+  </body>
 </html>

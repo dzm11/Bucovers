@@ -1,0 +1,35 @@
+.blog{
+flex-direction: column;
+    &__grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+        gap: 30px;
+        &--element{
+            margin-bottom: 80px;
+            .post{
+                &__image{
+                    margin-bottom: 24px;
+                }
+                &__title{
+                    font-size: 2rem;
+                    font-weight: $semibold;
+                    margin-bottom: 18px;
+                }
+                &__text{
+                    font-size: 1.375rem;
+                    font-weight: $regular;
+                    margin-bottom: 30px;
+                }
+                button{
+                    background-color: $Black;
+                    color: #ffffff;
+                    padding: 18px 46px;
+                    font-size: $body;
+                    font-weight: $semibold;
+                    border: none;
+                }
+            }
+        }
+    }
+}

@@ -15,45 +15,59 @@
 </head>
 <body>
     <div>
-        <header>
-          <nav class="nav flex flex-jc-sb flex-ai-c container">
-            <div class="nav-icon burger hide-for-desktop">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="mobile hide-for-desktop">
-              <div class="menu">
-                <div class="menu__items flex-jc-sb">
-                  <a href="#">Strona główna</a>
-                  <a href="#">Konfigurator</a>
-                  <a href="#">Zadaszenia</a>
-                  <a href="#">O nas</a>
-                  <a href="#">Kontakt</a>
-                </div>
+      <header>
+        <nav class="nav flex flex-jc-sb flex-ai-c">
+          <div class="nav-icon burger hide-for-desktop">
+            <span class="black1"></span>
+            <span class="black2"></span>
+            <span class="black3"></span>
+          </div>
+          <div class="mobile hide-for-desktop">
+            <div class="menu">
+              <div class="menu__items flex-jc-sb">
+                <a href="index.html">Strona główna</a>
+                <a href="konfigurator.html">Konfigurator</a>
+                <a href="zadaszenia.html">Zadaszenia</a>
+                <a href="o_nas.html">O nas</a>
+                <a href="services.html">Nasze usługi</a>
+                <a href="blog.html">Aktualności</a>
+                <a href="production.html">Produkcja</a>
+                <a href="technology.html">Technologia</a>
+                <a href="kontakt.html">Kontakt</a>
               </div>
             </div>
-            <div class="nav__logo hide-for-mobile">
-              <a href="index.html"><img src="app/img/logo-black.svg" alt="" /></a>
-            </div>
-            <div class="nav__left nav__links nav__links_black hide-for-mobile black">
-              <a href="#">Strona główna</a>
-              <a href="#">Konfigurator</a>
-              <a href="#">Zadaszenia</a>
-              <a href="#">O nas</a>
-              <a href="#">Kontakt</a>
-            </div>
-          </nav>
-        </header>
+          </div>
+          <div class="nav__logo hide-for-mobile">
+            <a href="index.html"><img src="app/img/logo-black.svg" alt="" /></a>
+          </div>
+          <div class="nav__left nav__links hide-for-mobile">
+            <ul class="flex flex-ai-c">
+              <li class="current-menu-item"><a class="black" href="index.html">Strona Główna</a></li>
+              <li><a class="black" href="konfigurator.html">Konfigurator</a>
+              <li><a class="black" href="zadaszenia.html">Zadaszenia</a></li>
+              <li><a class="black" href="o_nas.html">O nas</a>
+                <ul>
+                  <li class="submenu black"><a href="services.html">Nasze usługi</a></li>
+                  <li class="submenu black"><a href="blog.html">Aktualności</a></li>
+                  <li class="submenu black"><a href="production.html">Produkcja</a></li>
+                  <li class="submenu black"><a href="technology.html">Technologia</a></li>
+                  <li class="submenu black"><a href="#">Katalog produktów</a></li>
+                </ul>
+              </li>
+              <li><a class="black" href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-        <div class="blog">
+        <div class="blog flex flex-ai-c container">
             <div class="blog__grid">
                 <div class="blog__grid--element">
                     <div class="post">
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -61,7 +75,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -69,7 +83,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -77,7 +91,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -85,7 +99,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -93,7 +107,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -101,7 +115,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -109,7 +123,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
                 <div class="blog__grid--element">
@@ -117,7 +131,7 @@
                         <div class="post__image"><img src="app/img/blog.jpg" alt=""></div>
                         <div class="post__title">Jesteśmy firmą rodzinną.</div>
                         <div class="post__text">Siłą naszej firmy jest profesjonalizm, wysoka specjalizacja, znajomość branży i wiedza o technologii tworzenia zadaszeń basenowych. </div>
-                        <button></button>
+                        <button>Czytaj artykuł</button>
                     </div>
                 </div>
             </div>

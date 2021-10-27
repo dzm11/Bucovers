@@ -1,6 +1,9 @@
 const burger = document.querySelector('.burger');
 const body = document.querySelector('body');
 const menuItems = document.querySelector('.mobile');
+const blackSpan1 = document.querySelector('.black1');
+const blackSpan2 = document.querySelector('.black2');
+const blackSpan3 = document.querySelector('.black3');
 const items = document.querySelectorAll('.nav .mobile .mobile__menu .menu-item a');
 const social = document.querySelectorAll('.nav .mobile__menu .menu__social .row');
 
@@ -17,6 +20,10 @@ burger.addEventListener("click", () => {
     body.classList.toggle("open");
     
     menuItems.classList.toggle("open");
+
+    blackSpan1.classList.toggle("open");
+    blackSpan2.classList.toggle("open");
+    blackSpan3.classList.toggle("open");
 
     items.forEach(link=>{
         link.classList.toggle("fade");

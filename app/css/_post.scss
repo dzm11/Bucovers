@@ -1,0 +1,28 @@
+.post{
+    a{
+        color: $Black;
+        .post__back{
+            padding: 0 0 40px 40px;
+            font-size: 24px;
+            font-weight: $semibold;
+            text-decoration: underline;
+        }
+    }
+
+    &__image{
+        margin-bottom: 70px;
+    }
+    &__content{
+        max-width: 1370px;
+        h2{
+            font-size: 48px;
+            font-weight: $semibold;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 22px;
+            font-weight: $regular;
+            margin-bottom: 98px;
+        }
+    }
+}

@@ -17,42 +17,56 @@
 <body>
     <div>
         <header>
-            <nav class="nav flex flex-jc-sb flex-ai-c container">
-                <div class="nav-icon burger hide-for-desktop">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <nav class="nav flex flex-jc-sb flex-ai-c">
+              <div class="nav-icon burger hide-for-desktop">
+                <span class="black1"></span>
+                <span class="black2"></span>
+                <span class="black3"></span>
+              </div>
+              <div class="mobile hide-for-desktop">
+                <div class="menu">
+                  <div class="menu__items flex-jc-sb">
+                    <a href="index.html">Strona główna</a>
+                    <a href="konfigurator.html">Konfigurator</a>
+                    <a href="zadaszenia.html">Zadaszenia</a>
+                    <a href="o_nas.html">O nas</a>
+                    <a href="services.html">Nasze usługi</a>
+                    <a href="blog.html">Aktualności</a>
+                    <a href="production.html">Produkcja</a>
+                    <a href="technology.html">Technologia</a>
+                    <a href="kontakt.html">Kontakt</a>
+                  </div>
                 </div>
-                <div class="mobile hide-for-desktop">
-                    <div class="menu">
-                        <div class="menu__items flex-jc-sb">
-                            <a href="#">Strona główna</a>
-                            <a href="#">Konfigurator</a>
-                            <a href="#">Zadaszenia</a>
-                            <a href="#">O nas</a>
-                            <a href="#">Kontakt</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav__logo hide-for-mobile">
-                    <a href="index.html"><img src="app/img/logo-black.svg" alt="" /></a>
-                </div>
-                <div class="nav__left nav__links nav__links_black hide-for-mobile black">
-                    <a href="#">Strona główna</a>
-                    <a href="#">Konfigurator</a>
-                    <a href="#">Zadaszenia</a>
-                    <a href="#">O nas</a>
-                    <a href="#">Kontakt</a>
-                </div>
+              </div>
+              <div class="nav__logo hide-for-mobile">
+                <a href="index.html"><img src="app/img/logo-black.svg" alt="" /></a>
+              </div>
+              <div class="nav__left nav__links hide-for-mobile">
+                <ul class="flex flex-ai-c">
+                  <li class="current-menu-item"><a class="black" href="index.html">Strona Główna</a></li>
+                  <li><a class="black" href="konfigurator.html">Konfigurator</a>
+                  <li><a class="black" href="zadaszenia.html">Zadaszenia</a></li>
+                  <li><a class="black" href="o_nas.html">O nas</a>
+                    <ul>
+                      <li class="submenu black"><a href="services.html">Nasze usługi</a></li>
+                      <li class="submenu black"><a href="blog.html">Aktualności</a></li>
+                      <li class="submenu black"><a href="production.html">Produkcja</a></li>
+                      <li class="submenu black"><a href="technology.html">Technologia</a></li>
+                      <li class="submenu black"><a href="#">Katalog produktów</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="black" href="kontakt.html">Kontakt</a></li>
+                </ul>
+              </div>
             </nav>
-        </header>
+          </header>
 
         <div class="img__fullwidht">
             <img src="app/img/arrow_down.svg" alt="">
         </div>
         <div class="about container flex flex-ai-c">
             <div class="about__content flex flex-ai-c">
-                <div class="about__content--text">
+                <div class="production__content about__content--text">
                     <h1>Produkcja</h1>
                     <p>Hale produkcyjne zaopatrzone w najwyższej rangi maszyny oraz urządzenia to podstawa naszej
                         działalności. Systemy produkcyjne są szybkie i bardzo wydajne, dzięki czemu mamy możliwość
