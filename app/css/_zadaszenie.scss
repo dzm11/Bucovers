@@ -1,0 +1,49 @@
+.zadaszenie{
+    &__header{
+        margin-top: 30px;
+        &--category{
+            font-size: 17px;
+            font-weight: $bold;
+            text-transform: uppercase;
+            padding-left: 40px;
+        }
+        &--name{
+            font-size: 48px;
+            font-weight: $semibold;
+            margin-bottom: 28px;
+            padding-left: 40px;
+        }
+        &--image{
+            position: relative;
+            max-height: 720px;
+
+            img{
+                max-height: 720px;
+                width: 100%;
+                object-fit: cover;
+            }
+            // padding: 40px;
+            .opis{
+                position: absolute;
+                right: 60px;
+                top: 50%;
+                transform: translate(0, -50%);
+                // height: 80%;
+                background-color: white;
+                max-width: 567px;
+                padding: 40px;
+                color: $Black;
+                z-index: 2;
+                &__bold{
+                    font-size: 32px;
+                    font-weight: $semibold;
+                    margin-bottom: 18px;
+                }
+                &__body{
+                    font-size: 22px;
+                    font-weight: $regular;
+                }
+            }
+        }
+    }
+}
