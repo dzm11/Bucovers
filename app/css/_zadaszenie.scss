@@ -1,3 +1,9 @@
+.border{
+    border-top: 1px solid $Black;
+    border-bottom: 1px solid $Black;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
 .zadaszenie{
     &__header{
         margin-top: 30px;
@@ -45,5 +51,93 @@
                 }
             }
         }
+    }
+}
+.render{
+    margin-bottom: 40px;
+    span{
+        display: block;
+        width: 1px;
+        background-color: $Black;
+        margin: 0 40px;
+    }
+}
+.technologie{
+    &__title{
+        // padding-top: 25px;
+        &--name{
+            font-size: $heading;
+            font-weight: $semibold;
+
+            margin-bottom: 65px;
+        }
+    }
+    &__content{
+        padding-left: 40px;
+        &--image{
+            max-width: 256px;
+        }
+        &--text{
+            max-width: 1200px;
+            margin-left: 78px;
+            p{
+                font-size: $paragraph;
+                font-weight: $regular;
+            }
+        }
+
+    }
+}
+
+.wymiary{
+    &__title{
+        // padding-top: 25px;
+        &--name{
+            font-size: $heading;
+            font-weight: $semibold;
+
+            margin-bottom: 40px;
+        }
+    }
+    &__content{
+        .semibold{
+            font-weight: $semibold;
+        }
+    }
+}
+
+.pytania{
+    &__title{
+        // padding-top: 25px;
+        font-size: $heading;
+        font-weight: $semibold;
+        margin-bottom: 40px;
+        // margin-top: 20px;
+    }
+    &__content{
+        .grid{
+            display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 30px;
+        &__element{
+            margin-bottom: 50px;
+            &--question{
+                font-size: $smallheading;
+                font-weight: $semibold;
+                margin-bottom: 12px;
+            }
+            &--answear{
+                font-size: $paragraph;
+                font-weight: $regular;
+            }
+        }
+        }
+    }
+}
+
+.konfigurator{
+    &__title{
+        font-size: $heading;
+        font-weight: $semibold;
     }
 }
