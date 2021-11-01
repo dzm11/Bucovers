@@ -15,7 +15,9 @@ $body: 18px;
 $body-lh: #{"clamp(30px, 2vw, 38px)"};
 $smallheading: 1.75rem; //28    h2
 $heading: #{"clamp(2.5rem, 3vw, 3rem)"}; //48    h1
-
+@include breakpoint-down(medium) {
+    $paragraph: 1.125rem;
+}
 // $heading: 3rem; //48    h1
 
 // font weights
