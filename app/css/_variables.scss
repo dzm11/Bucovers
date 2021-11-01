@@ -1,4 +1,5 @@
 // Colors
+
 $LightBrown: #BFA49E;
 $Brown: #DF8269;
 $LightSea:#6AA5AC;
@@ -10,15 +11,10 @@ $Black: #202020;
 
 $small: 1.125rem; //18  p
 $paragraph: 1.375rem; //22   h3
-// $body: #{"clamp(1rem, 1.5vw, 1.375rem)"};
 $body: 18px;
 $body-lh: #{"clamp(30px, 2vw, 38px)"};
 $smallheading: 1.75rem; //28    h2
 $heading: #{"clamp(2.5rem, 3vw, 3rem)"}; //48    h1
-@include breakpoint-down(medium) {
-    $paragraph: 1.125rem;
-}
-// $heading: 3rem; //48    h1
 
 // font weights
 

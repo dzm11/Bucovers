@@ -1,5 +1,6 @@
-.service_containergit {
+.service_container {
     background-image: url(app/img/zadaszenie.jpg);
+    margin-bottom: 50px;
 }
 .header__image{
     position: relative;
@@ -8,4 +9,49 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+
+.left__text{
+    padding-left: 40px;
+    margin-bottom: 28px;
+    max-width: 1125px;
+    h2{
+        font-size: 48px;
+        line-height: 59px;
+    }
+}
+
+.black__container{
+    background-color: $Black;
+    color: white;
+    padding: 64px 40px;
+    margin-bottom: 50px;
+    li{
+
+        p{
+            font-size: 32px;
+            font-weight: $regular;
+        }
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+    &--title{
+        font-size: 38px;
+        font-weight: $semibold;
+        line-height: 54px;
+        margin-bottom: 20px;
+        max-width: 1125px;
+    }
+    &--grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 40px;
+        .grid{
+            li{
+                font-size: 38px;
+                font-weight: $semibold;
+            }
+        }
+    }
 }
