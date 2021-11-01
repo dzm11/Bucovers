@@ -22,6 +22,10 @@
         &--image{
             position: relative;
             max-height: 720px;
+            @include breakpoint-down(large) {
+                position: static;
+                max-height: none;
+            }
 
             img{
                 max-height: 720px;
@@ -40,14 +44,26 @@
                 padding: 40px;
                 color: $Black;
                 z-index: 2;
+                @include breakpoint-down(large) {
+                    position: static;
+                    transform: none;
+                    background-color: none;
+                    max-width: none;
+                }
                 &__bold{
                     font-size: 32px;
                     font-weight: $semibold;
                     margin-bottom: 18px;
+                    @include breakpoint-down(large) {
+                        max-width: 700px;
+                    }
                 }
                 &__body{
                     font-size: 22px;
                     font-weight: $regular;
+                    @include breakpoint-down(large) {
+                        max-width: 700px;
+                    }
                 }
             }
         }
@@ -55,11 +71,26 @@
 }
 .render{
     margin-bottom: 40px;
+    @include breakpoint-down(medium) {
+    flex-wrap: wrap;    
+    }
     span{
         display: block;
-        width: 1px;
+        min-width: 1px;
         background-color: $Black;
         margin: 0 40px;
+        @include breakpoint-down(medium) {
+            margin: 20px 0;
+            }
+            @media (max-width:887px){
+                display: none;
+            }
+    }
+
+    .span_none{
+        @include breakpoint-down(medium) {
+            display: none;
+            }
     }
 }
 .technologie{
@@ -76,6 +107,9 @@
         padding-left: 40px;
         &--image{
             max-width: 256px;
+            img{
+                max-width: none;
+            }
         }
         &--text{
             max-width: 1200px;
@@ -139,5 +173,10 @@
     &__title{
         font-size: $heading;
         font-weight: $semibold;
+        a{
+            width: 100%;
+            text-decoration: none;
+            color: $Black;
+        }
     }
 }
