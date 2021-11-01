@@ -1208,7 +1208,7 @@ body.open {
 }
 
 .zadaszenie__header--image .opis__body {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
 }
 
@@ -1226,6 +1226,14 @@ body.open {
   .render {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 887px) {
+  .render {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1264,8 +1272,24 @@ body.open {
   padding-left: 40px;
 }
 
+@media (max-width: 887px) {
+  .technologie__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0px;
+  }
+}
+
 .technologie__content--image {
   max-width: 256px;
+}
+
+@media (max-width: 887px) {
+  .technologie__content--image {
+    margin-bottom: 40px;
+  }
 }
 
 .technologie__content--image img {
@@ -1275,6 +1299,12 @@ body.open {
 .technologie__content--text {
   max-width: 1200px;
   margin-left: 78px;
+}
+
+@media (max-width: 887px) {
+  .technologie__content--text {
+    margin-left: 0px;
+  }
 }
 
 .technologie__content--text p {
@@ -1288,8 +1318,14 @@ body.open {
   margin-bottom: 40px;
 }
 
-.wymiary__content .semibold {
+.wymiary__content .flex {
+  font-size: 1.375rem;
+  margin-bottom: 12px;
+}
+
+.wymiary__content .flex .semibold {
   font-weight: 600;
+  font-size: 1.375rem;
 }
 
 .pytania__title {
