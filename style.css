@@ -90,7 +90,7 @@ input[type="search"] {
 }
 
 body {
-  font-size: 1,375rem;
+  font-size: 1.125rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -.5px;
   line-height: 32px;
@@ -429,7 +429,7 @@ body.open {
   background-color: #202020;
   color: #ffffff;
   padding: 18px 46px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   border: none;
 }
@@ -570,7 +570,7 @@ body.open {
 }
 
 .about__content--text h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: clamp(30px, 2vw, 38px);
   max-width: 700px;
@@ -587,7 +587,7 @@ body.open {
   background-color: #202020;
   color: #ffffff;
   padding: 18px 46px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   border: none;
 }
@@ -664,7 +664,7 @@ body.open {
 }
 
 .production__content--text h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: clamp(30px, 2vw, 38px);
   max-width: 800px;
@@ -681,7 +681,7 @@ body.open {
   background-color: #202020;
   color: #ffffff;
   padding: 18px 46px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   border: none;
 }
@@ -738,7 +738,7 @@ body.open {
 }
 
 .departments__content--item .item__person p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .departments__content--item .item__person p:nth-child(1) {
@@ -944,7 +944,7 @@ body.open {
   background-color: #ffffff;
   color: #202020;
   padding: 18px 46px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   border: none;
 }
@@ -1043,12 +1043,13 @@ body.open {
   background-color: #202020;
   color: white;
   padding: 64px 40px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.black__container li p {
+.black__container li {
+  list-style-position: inside;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .black__container li:not(:last-child) {
@@ -1068,12 +1069,61 @@ body.open {
   display: grid;
   -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 40px;
+  gap: 100px;
 }
 
 .black__container--grid .grid li {
+  list-style-position: inside;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text__boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.text__boxes .text__box--title {
   font-size: 38px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text__boxes .text__box--content {
+  font-size: 1.125rem;
+  line-height: 32px;
+}
+
+.padding-lr {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.padding-lr img {
+  margin-bottom: 30px;
+}
+
+.padding-lr button {
+  background-color: #202020;
+  color: #ffffff;
+  padding: 18px 46px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
 }
 
 .title {
@@ -1125,7 +1175,7 @@ body.open {
 }
 
 .about__content h3 {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   max-width: 648px;
 }
 
@@ -1160,7 +1210,7 @@ body.open {
 }
 
 .blog__grid--element .post__text {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -1169,7 +1219,7 @@ body.open {
   background-color: #202020;
   color: #ffffff;
   padding: 18px 46px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   border: none;
 }
@@ -1200,7 +1250,7 @@ body.open {
 }
 
 .post__content p {
-  font-size: 22px;
+  font-size: 1.125rem;
   font-weight: 400;
   margin-bottom: 98px;
 }
@@ -1307,7 +1357,7 @@ body.open {
 }
 
 .zadaszenie__header--image .opis__body {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
@@ -1407,7 +1457,7 @@ body.open {
 }
 
 .technologie__content--text p {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
@@ -1418,13 +1468,13 @@ body.open {
 }
 
 .wymiary__content .flex {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   margin-bottom: 12px;
 }
 
 .wymiary__content .flex .semibold {
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
 }
 
 .pytania__title {
@@ -1452,7 +1502,7 @@ body.open {
 }
 
 .pytania__content .grid__element--answear {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 

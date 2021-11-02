@@ -59,7 +59,7 @@
                     }
                 }
                 &__body{
-                    font-size: $paragraph;
+                    font-size: $body;
                     font-weight: $regular;
                     @include breakpoint-down(large) {
                         max-width: 700px;
@@ -129,7 +129,7 @@
                 margin-left: 0px;
             }
             p{
-                font-size: $paragraph;
+                font-size: $body;
                 font-weight: $regular;
             }
         }
@@ -148,11 +148,11 @@
     }
     &__content{
         .flex{
-            font-size: $paragraph; 
+            font-size: $body; 
             margin-bottom: 12px;
             .semibold{
                 font-weight: $semibold;
-                font-size: $paragraph; 
+                font-size: $body; 
             }
         }
     }
@@ -179,7 +179,7 @@
                 margin-bottom: 12px;
             }
             &--answear{
-                font-size: $paragraph;
+                font-size: $body;
                 font-weight: $regular;
             }
         }
