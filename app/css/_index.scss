@@ -163,10 +163,10 @@
 
         &--text{
             padding-left: 70px;
-            padding-right: 20px;
-            @include breakpoint-down(medium) {
-            padding-left: 0;
-            }
+            padding-right: 40px;
+            @include breakpoint-down(large) {
+                padding-left: 0px;
+                }
             h1{
                 font-weight: $semibold;
                 margin-bottom: 15px;
@@ -225,9 +225,12 @@
         flex: 1;
         &--text{
             padding-left: 90px;
-            @include breakpoint-down(medium) {
-                padding-left: 0;
+            @include breakpoint-down(large) {
+                padding-left: 40px;
                 }
+            @include breakpoint-down(medium) {
+            padding-left: 0;
+            }
             h1{
                 font-weight: $semibold;
                 margin-bottom: 15px;
