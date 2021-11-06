@@ -4,7 +4,7 @@
     margin-bottom: 60px;
     max-width: 1125px;
     h2 {
-      font-size: 48px;
+      font-size: $heading;
       line-height: 59px;
       font-weight: $semibold;
     }
@@ -240,10 +240,11 @@
     //   align-items: center;
       margin-bottom: 20px;
       h4{
-          font-size: 38px;
+          font-size: $smallheading;
+          font-weight: $semibold;
       }
       p {
-        font-size: 22px;
+        font-size: $body;
         font-weight: $regular;
         margin-bottom: 2px;
       }
@@ -319,13 +320,9 @@
           margin-bottom: 30px;
         }
         h4 {
-          font-size: 28px;
+          font-size: $smallheading;
           font-weight: $semibold;
           margin-bottom: 2px;
-        }
-        p {
-          font-size: 22px;
-          font-weight: $regular;
         }
       }
     }

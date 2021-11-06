@@ -1,200 +1,198 @@
-.border{
-    border-top: 1px solid $Black;
-    border-bottom: 1px solid $Black;
-    padding-bottom: 40px;
-    padding-top: 40px;
+.border {
+  border-top: 1px solid $Black;
+  border-bottom: 1px solid $Black;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
-.zadaszenie{
-    &__header{
-        margin-top: 30px;
-        &--category{
-            font-size: 17px;
-            font-weight: $bold;
-            text-transform: uppercase;
-            padding-left: 40px;
-        }
-        &--name{
-            font-size: 48px;
-            font-weight: $semibold;
-            margin-bottom: 28px;
-            padding-left: 40px;
-        }
-        &--image{
-            position: relative;
-            max-height: 720px;
-            @include breakpoint-down(large) {
-                position: static;
-                max-height: none;
-            }
-
-            img{
-                max-height: 720px;
-                width: 100%;
-                object-fit: cover;
-            }
-            // padding: 40px;
-            .opis{
-                position: absolute;
-                right: 60px;
-                top: 50%;
-                transform: translate(0, -50%);
-                // height: 80%;
-                background-color: white;
-                max-width: 567px;
-                padding: 40px;
-                color: $Black;
-                z-index: 2;
-                @include breakpoint-down(large) {
-                    position: static;
-                    transform: none;
-                    background-color: none;
-                    max-width: none;
-                }
-                &__bold{
-                    font-size: 32px;
-                    font-weight: $semibold;
-                    margin-bottom: 18px;
-                    @include breakpoint-down(large) {
-                        max-width: 700px;
-                    }
-                }
-                &__body{
-                    font-size: $body;
-                    font-weight: $regular;
-                    @include breakpoint-down(large) {
-                        max-width: 700px;
-                    }
-                }
-            }
-        }
+.zadaszenie {
+  &__header {
+    margin-top: 30px;
+    &--category {
+      font-size: 17px;
+      font-weight: $bold;
+      text-transform: uppercase;
+      padding-left: 40px;
     }
+    &--name {
+      font-size: $heading;
+      font-weight: $semibold;
+      margin-bottom: 28px;
+      padding-left: 40px;
+    }
+    &--image {
+      position: relative;
+      max-height: 720px;
+      @include breakpoint-down(large) {
+        position: static;
+        max-height: none;
+      }
+
+      img {
+        max-height: 720px;
+        width: 100%;
+        object-fit: cover;
+      }
+      // padding: 40px;
+      .opis {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translate(0, -50%);
+        // height: 80%;
+        background-color: white;
+        max-width: 567px;
+        padding: 40px;
+        color: $Black;
+        z-index: 2;
+        @include breakpoint-down(large) {
+          position: static;
+          transform: none;
+          background-color: none;
+          max-width: none;
+        }
+        &__bold {
+          font-size: 32px;
+          font-weight: $semibold;
+          margin-bottom: 18px;
+          @include breakpoint-down(large) {
+            max-width: 700px;
+          }
+        }
+        &__body {
+          font-size: $body;
+          font-weight: $regular;
+          @include breakpoint-down(large) {
+            max-width: 700px;
+          }
+        }
+      }
+    }
+  }
 }
-.render{
-    margin-bottom: 40px;
+.render {
+  margin-bottom: 40px;
+  @include breakpoint-down(medium) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 887px) {
+    justify-content: center;
+  }
+
+  span {
+    display: block;
+    min-width: 1px;
+    background-color: $Black;
+    margin: 0 40px;
     @include breakpoint-down(medium) {
-    flex-wrap: wrap;    
+      margin: 20px 0;
     }
-    @media (max-width:887px){
-        justify-content: center;
+    @media (max-width: 887px) {
+      display: none;
     }
+  }
 
-    span{
-        display: block;
-        min-width: 1px;
-        background-color: $Black;
-        margin: 0 40px;
-        @include breakpoint-down(medium) {
-            margin: 20px 0;
-            }
-            @media (max-width:887px){
-                display: none;
-            }
+  .span_none {
+    @include breakpoint-down(medium) {
+      display: none;
     }
-
-    .span_none{
-        @include breakpoint-down(medium) {
-            display: none;
-            }
-    }
+  }
 }
-.technologie{
-    &__title{
-        // padding-top: 25px;
-        &--name{
-            font-size: $heading;
-            font-weight: $semibold;
-
-            margin-bottom: 65px;
-        }
+.technologie {
+  &__title {
+    // padding-top: 25px;
+    &--name {
+      font-size: $heading;
+      font-weight: $semibold;
+      margin-bottom: 65px;
     }
-    &__content{
-        padding-left: 40px;
-        @media (max-width:887px){
-            flex-direction: column;
-            padding-left: 0px;
-        }
-        &--image{
-            max-width: 256px;
-            @media (max-width:887px){
-                margin-bottom: 40px;
-            }
-            img{
-                max-width: none;
-            }
-        }
-        &--text{
-            max-width: 1200px;
-            margin-left: 78px;
-            @media (max-width:887px){
-                margin-left: 0px;
-            }
-            p{
-                font-size: $body;
-                font-weight: $regular;
-            }
-        }
-
+  }
+  &__content {
+    padding-left: 40px;
+    @media (max-width: 887px) {
+      flex-direction: column;
+      padding-left: 0px;
     }
-}
-
-.wymiary{
-    &__title{
-        // padding-top: 25px;
-        &--name{
-            font-size: $heading;
-            font-weight: $semibold;
-            margin-bottom: 40px;
-        }
-    }
-    &__content{
-        .flex{
-            font-size: $body; 
-            margin-bottom: 12px;
-            .semibold{
-                font-weight: $semibold;
-                font-size: $body; 
-            }
-        }
-    }
-}
-
-.pytania{
-    &__title{
-        // padding-top: 25px;
-        font-size: $heading;
-        font-weight: $semibold;
+    &--image {
+      max-width: 256px;
+      @media (max-width: 887px) {
         margin-bottom: 40px;
-        // margin-top: 20px;
+      }
+      img {
+        max-width: none;
+      }
     }
-    &__content{
-        .grid{
-            display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-        gap: 30px;
-        &__element{
-            margin-bottom: 50px;
-            &--question{
-                font-size: $smallheading;
-                font-weight: $semibold;
-                margin-bottom: 12px;
-            }
-            &--answear{
-                font-size: $body;
-                font-weight: $regular;
-            }
-        }
-        }
+    &--text {
+      max-width: 1200px;
+      margin-left: 78px;
+      @media (max-width: 887px) {
+        margin-left: 0px;
+      }
+      p {
+        font-size: $body;
+        font-weight: $regular;
+      }
     }
+  }
 }
 
-.konfigurator{
-    &__title{
-        font-size: $heading;
-        font-weight: $semibold;
-        a{
-            width: 100%;
-            text-decoration: none;
-            color: $Black;
-        }
+.wymiary {
+  &__title {
+    // padding-top: 25px;
+    &--name {
+      font-size: $heading;
+      font-weight: $semibold;
+      margin-bottom: 40px;
     }
+  }
+  &__content {
+    .flex {
+      font-size: $body;
+      margin-bottom: 12px;
+      .semibold {
+        font-weight: $semibold;
+        font-size: $body;
+      }
+    }
+  }
+}
+
+.pytania {
+  &__title {
+    // padding-top: 25px;
+    font-size: $heading;
+    font-weight: $semibold;
+    margin-bottom: 40px;
+    // margin-top: 20px;
+  }
+  &__content {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 30px;
+      &__element {
+        margin-bottom: 50px;
+        &--question {
+          font-size: $smallheading;
+          font-weight: $semibold;
+          margin-bottom: 12px;
+        }
+        &--answear {
+          font-size: $body;
+          font-weight: $regular;
+        }
+      }
+    }
+  }
+}
+
+.konfigurator {
+  &__title {
+    font-size: $heading;
+    font-weight: $semibold;
+    a {
+      width: 100%;
+      text-decoration: none;
+      color: $Black;
+    }
+  }
 }

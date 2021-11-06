@@ -12,7 +12,9 @@ $Black: #202020;
 $body: 1.125rem;
 $body-lh: #{"clamp(32px, 2vw, 38px)"};
 $smallheading: 1.75rem; //28    h2
-$heading: #{"clamp(2.5rem, 3vw, 3rem)"}; //48    h1
+// $heading: #{"clamp(2.5rem, 3vw, 3rem)"}; //48    h1
+$mediumheading: 2.375rem;  //38px
+$heading: 3rem; //48    h1
 
 // font weights
 

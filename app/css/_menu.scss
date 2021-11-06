@@ -57,13 +57,19 @@ body.open {
 				right: 20px;
 			}
 		span {
-			background-color: $Black;
+			background-color: white;
 			display: block;
 			height: 4px;
 			width: 42px;
 			margin-bottom: 7px;
 		}
-		.black{
+		.black1{
+			background-color: $Black;
+		}
+		.black2{
+			background-color: $Black;
+		}
+		.black3{
 			background-color: $Black;
 		}
 		.black1.open{
